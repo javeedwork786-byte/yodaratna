@@ -216,7 +216,7 @@ const Contact = () => {
         <div className="mt-20 pt-8 border-t border-pink-500/30 text-center">
           <div className="flex justify-center space-x-6 mb-6">
             <a
-              href="https://www.instagram.com/yodaratna/"
+              href="https://www.instagram.com/yoda_ratna_awards_2025/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-pink-400 transition-colors duration-300"
@@ -240,7 +240,7 @@ const Contact = () => {
               </svg>
             </a>
             <a
-              href="https://www.facebook.com/yodaratna"
+              href="https://www.facebook.com/YodaratnaAwards/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-pink-400 transition-colors duration-300"

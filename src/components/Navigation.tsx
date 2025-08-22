@@ -14,9 +14,6 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // --- THIS IS THE CHANGE ---
-  // All nav items are now in a single array to guarantee the correct order.
-  // "Gallery" is placed before "Contact" to ensure "Contact" is the last item.
   const navLinks = [
     { type: 'scroll', href: '#home', label: 'Home' },
     { type: 'scroll', href: '#about', label: 'About' },
@@ -24,6 +21,8 @@ const Navigation = () => {
     { type: 'scroll', href: '#founders', label: 'Founders' },
     { type: 'scroll', href: '#agenda', label: 'Agenda' },
     { type: 'scroll', href: '#registration', label: 'Register' },
+    // --- THIS IS THE NEW LINK ---
+    { type: 'link', href: '/guests', label: 'Guests' },
     { type: 'link', href: '/gallery', label: 'Gallery' },
     { type: 'scroll', href: '#contact', label: 'Contact' },
   ];
@@ -54,9 +53,9 @@ const Navigation = () => {
             <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
               <img src="/images/yodara.png" alt="Yodha Ratna Logo" className="h-12 md:h-14 object-contain" />
             </Link>
+            
           </div>
           <div className="hidden md:flex items-center space-x-8">
-            {/* Desktop navigation now reads from the single navLinks array */}
             {navLinks.map((item) => {
               const commonClasses = "text-white hover:text-pink-400 transition-colors duration-300 relative group";
               const underline = <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-pink-500 to-yellow-500 group-hover:w-full transition-all duration-300"></span>;
@@ -86,7 +85,6 @@ const Navigation = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden absolute top-16 left-0 right-0 bg-black/95 backdrop-blur-md">
             <div className="px-6 py-4 space-y-4">
-              {/* Mobile navigation also reads from the single navLinks array */}
               {navLinks.map((item) => {
                 const commonClasses = "block w-full text-left text-white hover:text-pink-400 transition-colors duration-300 py-2";
                 if (item.type === 'link') {

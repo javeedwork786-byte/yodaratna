@@ -174,12 +174,6 @@ const Founders = () => {
                 desc: 'Renowned academician, Political Analyst\nMountaineering & Rock climber, Motivational Speaker\nSocial influencer'
               },
               {
-                img: '/images/vij.png',
-                name: 'LADY SUPERSTAR VIJAYA SHANTI GARU',
-                title: 'CHEIF GUEST',
-                desc: 'Member of Telangana legislative council\nActress, Film producer, Politician, Social Worker'
-              },
-              {
                 img: '/images/veer.png',
                 name: 'PALLE.VEERAMANI GARU',
                 title: 'AWARDEE\nYODA VEERA NAARI AWARD',
@@ -198,56 +192,39 @@ const Founders = () => {
                 desc: 'Kala Sindhu\nTagline King'
               },
             ].concat([
-              ...['/images/11.png', '/images/12.png', '/images/14.png', '/images/15.png', '/images/16.png', '/images/17.png', '/images/18.png'].map((img, idx) => {
+              ...['/images/12.png', '/images/14.png', '/images/15.png', '/images/16.png', '/images/17.png', '/images/18.png'].map((img, idx) => {
                 if (idx === 0) {
-                  return {
-                    img,
-                    name: 'KOTHA KALPANA GARU',
-                    title: 'AWARDEE\nYODA VEERA NAARI AWARD',
-                    desc: 'Journalist'
-                  };
+                   return null; // remove shobhareddy
                 } else if (idx === 1) {
-                  return {
-                    img,
-                    name: 'MOTHE SRILATHA SHOBAN REDDY GARU',
-                    title: 'CHEIF GUEST',
-                    desc: 'GhmC deputy mayor'
-                  };
-                } else if (idx === 2) {
                   return {
                     img,
                     name: 'DR. KAMMELA SREEDHAR GARU',
                     title: 'CHEIF GUEST',
                     desc: 'M.S., M.Ch.(P.G.I.Chandigarh), FRUS(USA), FACC(USA)\nEleven World Records Holder, Gold Medalist\nSr.Consultant Robotic Urologist, Microsurgical Andrologist, Transplant Surgeon.\nLaparoscopic Robotic Minimally invasive Surgeon'
                   };
-                } else if (idx === 3) {
+                } else if (idx === 2) {
                   return {
                     img: '/images/24.png',
                     name: 'VUNDAVALLI SRIDEVI GARU',
                     title: 'CHEIF GUEST',
                     desc: 'AP SC cooperation chairperson.\nEX-Former Member of the Legislative Assembly of Andhra Pradesh\nMBBS, MD, Gynecologist, Infertility Specialist.'
                   };
-                } else if (idx === 4) {
+                } else if (idx === 3) {
                   return {
                     img,
                     name: 'PURUREDDY GARU',
                     title: 'CHEIF GUEST',
                     desc: 'BJP Leader\nSanath Nagar Constancy'
                   };
-                } else if (idx === 5) {
+                } else if (idx === 4) {
                   return {
                     img,
                     name: 'N. RAMCHANDER RAO GARU',
                     title: 'CHEIF GUEST',
                     desc: 'BJP\nTelangana Rashtra Adhyakshulu'
                   };
-                } else if (idx === 6) {
-                  return {
-                    img: '/images/24.png',
-                    name: 'GOPU RAMANA REDDY GARU',
-                    title: 'CHEIF GUEST',
-                    desc: 'Ex-Army JCO, MLA Aspirant for Malkajgiri Assembly Constituency and MD of 25 PMBJAKs, & OPEN NGO President, BJP.'
-                  };
+                } else if (idx === 5) {
+                   return null; // remove ramana reddy
                 } else {
                   return {
                     img,
@@ -311,12 +288,6 @@ const Founders = () => {
                   title: 'SPECIAL GUEST',
                   desc: 'Master\nChoreographer  TFI\nArya 2, Panjaa'
                 },
-                {
-                  img: '/images/26.png',
-                  name: 'DR.MADALA RAVI GARU',
-                  title: 'CHEIF GUEST',
-                  desc: 'Actor, Producer\nMAA Movie Artists,\nAssociation, vice president'
-                },
               ]
             ]).filter(Boolean);
             const categories = [
@@ -340,28 +311,10 @@ const Founders = () => {
                     desc: "The Hon'ble Minister For Labour, Employment, Training, Factories And Mines & Geology"
                   },
                   {
-                    img: '/images/vij.png',
-                    name: 'LADY SUPERSTAR VIJAYA SHANTI GARU',
-                    title: 'CHEIF GUEST',
-                    desc: 'Member of Telangana legislative council\nActress, Film producer, Politician, Social Worker'
-                  },
-                  {
-                    img: '/images/12.png',
-                    name: 'MOTHE SRILATHA SHOBAN REDDY GARU',
-                    title: 'CHEIF GUEST',
-                    desc: 'Ghmc deputy mayor'
-                  },
-                  {
                     img: '/images/17.png',
                     name: 'N. RAMCHANDER RAO GARU',
                     title: 'CHEIF GUEST',
                     desc: 'BJP\nTelangana Rashtra Adhyakshulu'
-                  },
-                  {
-                    img: '/images/18.png',
-                    name: 'GOPU RAMANA REDDY GARU',
-                    title: 'CHEIF GUEST',
-                    desc: 'Ex-Army JCO, MLA Aspirant for Malkajgiri Assembly Constituency and MD of 25 PMBJAKs, & OPEN NGO President, BJP.'
                   },
                   {
                     img: '/images/16.png',
@@ -398,12 +351,6 @@ const Founders = () => {
                     name: 'CHINNA SRISAILAM GARU',
                     title: 'CHEIF GUEST',
                     desc: 'Chairman, BC & JAC Committee'
-                  },
-                  {
-                    img: '/images/26.png',
-                    name: 'DR.MADALA RAVI GARU',
-                    title: 'CHEIF GUEST',
-                    desc: 'Actor, Producer\nMAA Movie Artists,\nAssociation, vice president'
                   },
                 ];
                 return (

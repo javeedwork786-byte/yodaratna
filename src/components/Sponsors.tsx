@@ -122,7 +122,7 @@ const Sponsors = () => {
 
           <div className="flex flex-row overflow-x-auto gap-6 pb-4 -mx-4 px-4 snap-x snap-mandatory sm:gap-8 md:grid md:grid-cols-4 lg:grid-cols-5 md:gap-6 md:overflow-x-visible md:px-0 md:mx-0">
             {[
-              'i1.png',
+              'logo2.png',
               '2.png',
               '3.png',
               '4.png',

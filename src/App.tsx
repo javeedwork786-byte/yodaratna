@@ -5,9 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Gallery from "./components/Gallery"; // 1. IMPORT THE GALLERY COMPONENT
+import Gallery from "./components/Gallery";
 import Navigation from "./components/Navigation";
-
+import Guests from "./components/Guests"; // 1. IMPORT THE GUESTS COMPONENT
 
 const queryClient = new QueryClient();
 
@@ -22,6 +22,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/guests" element={<Guests />} /> {/* 2. ADD THE GUESTS ROUTE */}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
