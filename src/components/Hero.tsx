@@ -10,7 +10,8 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const eventDate = new Date('2025-08-23T00:00:00'); // updated date
+    // The target date and time is now set to August 23, 2025, at 9:00 AM
+    const eventDate = new Date('2025-08-23T09:00:00'); 
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
